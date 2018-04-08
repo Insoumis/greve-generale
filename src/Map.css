@@ -1,0 +1,10 @@
+.Map {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.Map .mapboxgl-ctrl-bottom-left,
+.Map .mapboxgl-ctrl-bottom-right {
+    display: none;
+}
