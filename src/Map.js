@@ -43,8 +43,11 @@ class Map extends Component {
     }
 
     if (this.props.greviculteurHovered !== nextProps.greviculteurHovered) {
-      this.props.greviculteurHovered && document.getElementById(this.props.greviculteurHovered).classList.remove('hovered')
-      nextProps.greviculteurHovered && document.getElementById(nextProps.greviculteurHovered).classList.add('hovered');
+      this.props.greviculteurHovered && document.getElementById(this.props.greviculteurHovered) && 
+        document.getElementById(this.props.greviculteurHovered).classList.remove('hovered');
+        
+      nextProps.greviculteurHovered && document.getElementById(nextProps.greviculteurHovered) && 
+        document.getElementById(nextProps.greviculteurHovered).classList.add('hovered');
     }
   }
   
