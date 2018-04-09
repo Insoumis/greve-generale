@@ -6,6 +6,8 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import './Map.css';
 
 class Map extends Component {
+  state = {}
+
   markers = []
 
   componentDidMount() {
@@ -27,12 +29,22 @@ class Map extends Component {
 
       nextProps.greviculteurs.forEach((greviculteur) => {
         const container = document.createElement('div');
-        ReactDOM.render(<div className={`Map-pin ${greviculteur.category}`} />, container);
+        ReactDOM.render(
+          <div
+            id={greviculteur.id}
+            className={`Map-pin ${greviculteur.category}`}
+          />
+        , container);
         const marker = new mapboxgl.Marker(container)
           .setLngLat([greviculteur.lng, greviculteur.lat])
           .addTo(this.map);
         this.markers.push(marker);
       });
+    }
+
+    if (this.props.greviculteurHovered !== nextProps.greviculteurHovered) {
+      this.props.greviculteurHovered && document.getElementById(this.props.greviculteurHovered).classList.remove('hovered')
+      nextProps.greviculteurHovered && document.getElementById(nextProps.greviculteurHovered).classList.add('hovered');
     }
   }
   

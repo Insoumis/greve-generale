@@ -11,7 +11,7 @@
 }
 
 .Greviculteurs-filters {
-    margin-bottom: 45px;
+    margin-bottom: 15px;
 }
 
 .Greviculteurs-filters button {
@@ -54,8 +54,11 @@
     align-items: flex-start;
     border-bottom: 1px dashed #3c4171;
     display: flex;
-    margin-bottom: 30px;
-    padding: 0 15px 15px;
+    padding: 30px 15px 15px;
+}
+
+.Greviculteurs-list article:hover {
+    background: white;
 }
 
 .Greviculteurs-list img {

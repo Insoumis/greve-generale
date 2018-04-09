@@ -14,7 +14,13 @@
     background: url('./assets/pin.svg') no-repeat;
     background-size: cover;
     height: 28px;
+    transform-origin: bottom center;
+    transition: .3s;
     width: 20px;
+}
+
+.Map-pin.hovered {
+    transform: scale(1.5);
 }
 
 .Map-pin.Poste {

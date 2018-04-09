@@ -28,12 +28,23 @@ class App extends Component {
       });
   }
 
+  handleListHover(id) {
+    this.setState({
+      greviculteurHovered: id,
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <Map greviculteurs={this.state.greviculteurs} />
+        <Map greviculteurs={this.state.greviculteurs} greviculteurHovered={this.state.greviculteurHovered} />
         <Nav />
-        <Greviculteurs greviculteurs={this.state.greviculteurs} getAll={() => this.getAll()} getCategory={(category) => this.getCategory(category)} />
+        <Greviculteurs
+          greviculteurs={this.state.greviculteurs}
+          handleListHover={(id) => this.handleListHover(id)}
+          getAll={() => this.getAll()}
+          getCategory={(category) => this.getCategory(category)}
+        />
       </div>
     );
   }

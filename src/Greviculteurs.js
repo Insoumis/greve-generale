@@ -25,7 +25,12 @@ class Greviculteurs extends Component {
         </div>
         <div className="Greviculteurs-list">
         {this.props.greviculteurs && this.props.greviculteurs.map((greviculteur) => (
-          <article key={greviculteur.id} className={greviculteur.category}>
+          <article 
+            key={greviculteur.id} 
+            className={greviculteur.category} 
+            onMouseOver={() => this.props.handleListHover(greviculteur.id)}
+            onMouseOut={() => this.props.handleListHover()}
+          >
             {(greviculteur.twitter) ? 
               <img src={`https://twitter.com/${greviculteur.twitter}/profile_image?size=normal`} alt="Avatar Twitter"/>
             : false}
