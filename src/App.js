@@ -11,18 +11,29 @@ class App extends Component {
   state = {}
 
   componentWillMount() {
-    db.collection('greviculteurs').orderBy('createdAt', 'desc').get()
+    this.getAll();
+  }
+
+  getAll() {
+    db.collection('greviculteurs').orderBy('name').get()
       .then(collection => {
         this.setState({ greviculteurs: collection.docs.map( doc => Object.assign( doc.data(), { id: doc.id } ) ) });
       });
   }
   
+  getCategory(category) {
+    db.collection('greviculteurs').orderBy('name').where('category', '==', category).get()
+      .then(collection => {
+        this.setState({ greviculteurs: collection.docs.map( doc => Object.assign( doc.data(), { id: doc.id } ) ) });
+      });
+  }
+
   render() {
     return (
       <div className="App">
         <Map greviculteurs={this.state.greviculteurs} />
         <Nav />
-        <Greviculteurs greviculteurs={this.state.greviculteurs} />
+        <Greviculteurs greviculteurs={this.state.greviculteurs} getAll={() => this.getAll()} getCategory={(category) => this.getCategory(category)} />
       </div>
     );
   }
