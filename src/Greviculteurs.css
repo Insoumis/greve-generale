@@ -25,7 +25,7 @@
     margin: 4px;
     padding: 2px 6px;
     text-transform: uppercase;
-    transition: .1s;
+    transition: .2s;
 }
 .Greviculteurs-filters button:focus,
 .Greviculteurs-filters button:hover,
@@ -55,6 +55,8 @@
     border-bottom: 1px dashed #3c4171;
     display: flex;
     padding: 30px 15px 15px;
+    cursor: pointer;
+    transition: .2s;
 }
 
 .Greviculteurs-list article:hover {
