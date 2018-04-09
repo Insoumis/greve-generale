@@ -8,3 +8,10 @@
 .Map .mapboxgl-ctrl-bottom-right {
     display: none;
 }
+
+.Map-pin {
+    background: url('./assets/pin.png') no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+}

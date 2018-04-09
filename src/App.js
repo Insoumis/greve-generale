@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Map />
+        <Map greviculteurs={this.state.greviculteurs} />
         <Nav />
         <Greviculteurs greviculteurs={this.state.greviculteurs} />
       </div>
