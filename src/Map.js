@@ -33,7 +33,7 @@ class Map extends Component {
   componentDidUpdate() {
     this.props.greviculteurs && this.props.greviculteurs.forEach((greviculteur) => {
       const container = document.createElement('div');
-      ReactDOM.render(<div className="Map-pin" />, container);
+      ReactDOM.render(<div className={`Map-pin ${greviculteur.category}`} />, container);
       new mapboxgl.Marker(container)
         .setLngLat([greviculteur.lng, greviculteur.lat])
         .addTo(this.map);

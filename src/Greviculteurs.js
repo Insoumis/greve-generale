@@ -7,7 +7,7 @@ class Greviculteurs extends Component {
     return (
       <div className="Greviculteurs">
         {this.props.greviculteurs && this.props.greviculteurs.map((greviculteur) => (
-          <article key={greviculteur.id}>
+          <article key={greviculteur.id} className={greviculteur.category}>
             {(greviculteur.twitter) ? 
               <img src={`https://twitter.com/${greviculteur.twitter}/profile_image?size=normal`} alt="Avatar Twitter"/>
             : false}

@@ -15,3 +15,7 @@
     height: 28px;
     width: 20px;
 }
+
+.Map-pin.Poste {
+    background-image: url('./assets/pin-poste.svg');
+}
