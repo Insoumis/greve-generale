@@ -1,11 +1,12 @@
 {
-  "main.css": "static/css/main.7251d4df.css",
-  "main.css.map": "static/css/main.7251d4df.css.map",
-  "main.js": "static/js/main.53d8123e.js",
-  "main.js.map": "static/js/main.53d8123e.js.map",
+  "main.css": "static/css/main.f125395f.css",
+  "main.css.map": "static/css/main.f125395f.css.map",
+  "main.js": "static/js/main.100ad757.js",
+  "main.js.map": "static/js/main.100ad757.js.map",
   "static/media/MarkPro-Bold.woff": "static/media/MarkPro-Bold.96785d36.woff",
   "static/media/MarkPro-Bold.woff2": "static/media/MarkPro-Bold.0bc4a8a5.woff2",
   "static/media/MarkPro.woff": "static/media/MarkPro.5825c3f2.woff",
   "static/media/MarkPro.woff2": "static/media/MarkPro.b9246dc3.woff2",
+  "static/media/pin-poste.svg": "static/media/pin-poste.361514fd.svg",
   "static/media/pin.svg": "static/media/pin.178c957f.svg"
 }
