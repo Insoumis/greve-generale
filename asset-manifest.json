@@ -1,12 +1,13 @@
 {
-  "main.css": "static/css/main.2ffd313a.css",
-  "main.css.map": "static/css/main.2ffd313a.css.map",
-  "main.js": "static/js/main.3a6f9bc0.js",
-  "main.js.map": "static/js/main.3a6f9bc0.js.map",
+  "main.css": "static/css/main.74b9d34f.css",
+  "main.css.map": "static/css/main.74b9d34f.css.map",
+  "main.js": "static/js/main.4f3463d3.js",
+  "main.js.map": "static/js/main.4f3463d3.js.map",
   "static/media/MarkPro-Bold.woff": "static/media/MarkPro-Bold.96785d36.woff",
   "static/media/MarkPro-Bold.woff2": "static/media/MarkPro-Bold.0bc4a8a5.woff2",
   "static/media/MarkPro.woff": "static/media/MarkPro.5825c3f2.woff",
   "static/media/MarkPro.woff2": "static/media/MarkPro.b9246dc3.woff2",
   "static/media/pin-education.svg": "static/media/pin-education.178c957f.svg",
-  "static/media/pin-public.svg": "static/media/pin-public.361514fd.svg"
+  "static/media/pin-public.svg": "static/media/pin-public.361514fd.svg",
+  "static/media/pin.svg": "static/media/pin.e1ffaf5e.svg"
 }
