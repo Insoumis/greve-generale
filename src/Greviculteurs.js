@@ -19,9 +19,9 @@ class Greviculteurs extends Component {
     return (
       <div className="Greviculteurs">
         <div className="Greviculteurs-filters">
-          <button className={(this.state.category ? false : 'active')} onClick={() => this.filter()}>Tout</button>
+          <button className={(this.state.category ? '' : 'active')} onClick={() => this.filter()}>Tout</button>
           <button className={`Éducation${(this.state.category === 'Éducation' ? ' active' : '')}`} onClick={() => this.filter('Éducation')}>Éducation</button>
-          <button className={`Poste${(this.state.category === 'Poste' ? ' active' : '')}`} onClick={() => this.filter('Poste')}>Poste</button>
+          <button className={`Public${(this.state.category === 'Public' ? ' active' : '')}`} onClick={() => this.filter('Public')}>Service Public</button>
         </div>
         <div className="Greviculteurs-list">
         {this.props.greviculteurs && this.props.greviculteurs.map((greviculteur) => (
@@ -39,7 +39,7 @@ class Greviculteurs extends Component {
                 {greviculteur.name}
               </h1>
               <p>
-                {greviculteur.description}
+                {greviculteur.excerpt}
               </p>
             </div>
           </article>

@@ -23,8 +23,12 @@
     transform: scale(1.5);
 }
 
-.Map-pin.Poste {
-    background-image: url('./assets/pin-poste.svg');
+.Map-pin.Éducation {
+    background-image: url('./assets/pin-education.svg');
+}
+
+.Map-pin.Public {
+    background-image: url('./assets/pin-public.svg');
 }
 
 @keyframes markerappears {
@@ -33,5 +37,12 @@
     }
     to {
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 1023px) {
+    .Map-pin {
+        height: 21px;
+        width: 15px;
     }
 }

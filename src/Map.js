@@ -11,12 +11,19 @@ class Map extends Component {
   markers = []
 
   componentDidMount() {
+    let coords = [8, 47.909578];
+    let zoom = 5;
+    if (window.matchMedia('(max-width: 1023px)').matches) {
+      coords = [1.8, 47.909578];
+      zoom = 4.2;
+    }
+
     mapboxgl.accessToken = 'pk.eyJ1Ijoic25haGVkaXMiLCJhIjoiMS1rYlVhcyJ9.fQMsZNexqS0Xd6-AZaj_ow';
     this.map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/snahedis/cjfr0uxsj0x8x2rruqub9fb24',
-      center: [8, 47.909578],
-      zoom: 5,
+      center: coords,
+      zoom,
     });
   }
 

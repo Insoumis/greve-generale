@@ -40,7 +40,7 @@
     border-color: #C70039;
 }
 
-.Greviculteurs-filters .Poste {
+.Greviculteurs-filters .Public {
     background: #ebb400;
     border-color: #ebb400;
 }
@@ -75,7 +75,7 @@
     text-transform: uppercase;
 }
 
-.Greviculteurs-list .Poste h1 {
+.Greviculteurs-list .Public h1 {
     color: #ebb400;
 }
 
@@ -83,3 +83,17 @@
     font-size: 14px;
 }
 
+@media (max-width: 1023px) {
+    .Greviculteurs {
+        height: calc(100vh - 66px);
+        margin: 66px 0 0;
+        min-width: 0;
+        transform: translateX(108%);
+        transition: .2s;
+        width: 100%;
+    }
+
+    .Mobile-list-displayed .Greviculteurs {
+        transform: translateX(0);
+    }
+}

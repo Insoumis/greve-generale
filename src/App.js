@@ -5,10 +5,10 @@ import Map from './Map';
 import Nav from './Nav';
 import Greviculteurs from './Greviculteurs';
 
-import './App.css';
-
 class App extends Component {
-  state = {}
+  state = {
+    isMobileListHidden: true,
+  }
 
   componentWillMount() {
     this.getAll();
@@ -34,16 +34,22 @@ class App extends Component {
     });
   }
 
+  toggleMobileList() {
+    this.setState((prevState) => ({
+      isMobileListHidden: !prevState.isMobileListHidden,
+    }));
+  }
+
   render() {
     return (
-      <div className="App">
+      <div className={`App${(this.state.isMobileListHidden ? '' : ' Mobile-list-displayed')}`}>
         <Map greviculteurs={this.state.greviculteurs} greviculteurHovered={this.state.greviculteurHovered} />
-        <Nav />
+        <Nav toggleMobileList={() => this.toggleMobileList()}/>
         <Greviculteurs
-          greviculteurs={this.state.greviculteurs}
-          handleListHover={(id) => this.handleListHover(id)}
           getAll={() => this.getAll()}
           getCategory={(category) => this.getCategory(category)}
+          greviculteurs={this.state.greviculteurs}
+          handleListHover={(id) => this.handleListHover(id)}
         />
       </div>
     );

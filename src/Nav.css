@@ -23,3 +23,30 @@
     margin: 0;
     text-align: center;
 }
+
+.Nav button {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .Nav h1 {
+        float: left;
+        margin: 0;
+        text-align: left;
+    }
+
+    .Nav h2 {
+        display: none;
+    }
+
+    .Nav button {
+        background: transparent;
+        border: 0;
+        color: white;
+        display: block;
+        float: right;
+        font-size: 32px;
+        padding: 0;
+        text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+    }
+}
