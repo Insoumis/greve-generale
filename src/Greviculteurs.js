@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Greviculteurs.css';
 
@@ -25,24 +26,26 @@ class Greviculteurs extends Component {
         </div>
         <div className="Greviculteurs-list">
         {this.props.greviculteurs && this.props.greviculteurs.map((greviculteur) => (
-          <article 
-            key={greviculteur.id} 
-            className={greviculteur.category} 
-            onMouseOver={() => this.props.handleListHover(greviculteur.id)}
-            onMouseOut={() => this.props.handleListHover()}
-          >
-            {(greviculteur.twitter) ? 
-              <img src={`https://twitter.com/${greviculteur.twitter}/profile_image?size=normal`} alt="Avatar Twitter"/>
-            : false}
-            <div>
-              <h1>
-                {greviculteur.name}
-              </h1>
-              <p>
-                {greviculteur.excerpt}
-              </p>
-            </div>
-          </article>
+          <Link to={`/${greviculteur.id}`}>
+            <article 
+              key={greviculteur.id} 
+              className={greviculteur.category} 
+              onMouseOver={() => this.props.handleListHover(greviculteur.id)}
+              onMouseOut={() => this.props.handleListHover()}
+            >
+              {(greviculteur.twitter) ? 
+                <img src={`https://twitter.com/${greviculteur.twitter}/profile_image?size=normal`} alt="Avatar Twitter"/>
+              : false}
+              <div>
+                <h1>
+                  {greviculteur.name}
+                </h1>
+                <p>
+                  {greviculteur.excerpt}
+                </p>
+              </div>
+            </article>
+          </Link>
         ))}
         </div>
       </div>

@@ -50,17 +50,22 @@
     overflow-y: auto;
 }
 
-.Greviculteurs-list article {
+.Greviculteurs-list a {
     align-items: flex-start;
     border-bottom: 1px dashed #3c4171;
-    display: flex;
+    color: #2f3359;
+    display: block;
     padding: 30px 15px 15px;
-    cursor: pointer;
+    text-decoration: none;
     transition: .2s;
 }
 
-.Greviculteurs-list article:hover {
+.Greviculteurs-list a:hover {
     background: white;
+}
+
+.Greviculteurs-list article {
+    display: flex;
 }
 
 .Greviculteurs-list img {
@@ -69,10 +74,14 @@
 }
 
 .Greviculteurs-list h1 {
-    color: #C70039;
+    color: #3c4171;
     font-size: 16px;
     margin: 0;
     text-transform: uppercase;
+}
+
+.Greviculteurs-list .Éducation h1 {
+    color: #C70039;
 }
 
 .Greviculteurs-list .Public h1 {
