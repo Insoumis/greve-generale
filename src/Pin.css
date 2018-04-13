@@ -1,0 +1,78 @@
+.Pin {
+    animation: markerappears .4s;
+    background: url('./assets/pin.svg') no-repeat;
+    background-size: cover;
+    height: 28px;
+    transform-origin: bottom center;
+    transition: .3s;
+    width: 20px;
+}
+
+.mapboxgl-marker:hover {
+    z-index: 800;
+}
+
+.Pin.hovered,
+.Pin:hover {
+    transform: scale(1.5);
+}
+
+.Pin.Éducation {
+    background-image: url('./assets/pin-education.svg');
+}
+
+.Pin.Public {
+    background-image: url('./assets/pin-public.svg');
+}
+
+.Pin-tooltip {
+    background: rgba(248, 247, 247, .95);
+    border-radius: 4px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, .1);
+    margin-left: 10px;
+    opacity: 0;
+    padding: 10px;
+    pointer-events: none;
+    position: absolute;
+    transform: translateX(-50%) translateY(calc(-100%));
+    transition: .3s;
+    width: 180px;
+}
+
+.Pin:hover .Pin-tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(calc(-100% - 8px));
+}
+
+.Pin-tooltip h1 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.Pin.Éducation h1 {
+    color: #C70039;
+}
+
+.Pin.Public h1 {
+    color: #ebb400;
+}
+
+.Pin-tooltip p {
+    margin: 5px 0 0;
+}
+
+@keyframes markerappears {
+    from {
+        transform: translateY(-30px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1023px) {
+    .Pin {
+        height: 21px;
+        width: 15px;
+    }
+}

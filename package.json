@@ -9,7 +9,8 @@
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-responsive": "^4.1.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-twitter-widgets": "^1.7.1"
   },
   "devDependencies": {
     "gh-pages": "^1.1.0"

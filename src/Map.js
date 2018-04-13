@@ -2,6 +2,8 @@ import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
 import mapboxgl from 'mapbox-gl';
 
+import Pin from './Pin';
+
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './Map.css';
 
@@ -37,10 +39,7 @@ class Map extends Component {
       nextProps.greviculteurs.forEach((greviculteur) => {
         const container = document.createElement('div');
         ReactDOM.render(
-          <div
-            id={greviculteur.id}
-            className={`Map-pin ${greviculteur.category}`}
-          />
+          <Pin greviculteur={greviculteur} />
         , container);
         const marker = new mapboxgl.Marker(container)
           .setLngLat([greviculteur.lng, greviculteur.lat])
