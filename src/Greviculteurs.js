@@ -26,9 +26,8 @@ class Greviculteurs extends Component {
         </div>
         <div className="Greviculteurs-list">
         {this.props.greviculteurs && this.props.greviculteurs.map((greviculteur) => (
-          <Link to={`/${greviculteur.id}`}>
+          <Link key={greviculteur.id} to={`/${greviculteur.id}`}>
             <article 
-              key={greviculteur.id} 
               className={greviculteur.category} 
               onMouseOver={() => this.props.handleListHover(greviculteur.id)}
               onMouseOut={() => this.props.handleListHover()}

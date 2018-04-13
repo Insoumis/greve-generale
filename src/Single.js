@@ -5,6 +5,10 @@ import { Timeline } from 'react-twitter-widgets';
 import './Single.css';
 
 const Single = ({ greviculteur, history }) => {
+  if (!greviculteur) {
+    return false;
+  }
+
   return (
     <div 
       className="Single"
@@ -15,7 +19,7 @@ const Single = ({ greviculteur, history }) => {
         onClick={e => e.stopPropagation()}
       >
         <Link className="Single-close" to="/">
-          <i class="fas fa-times-circle"></i>
+          <i className="fas fa-times-circle" />
         </Link>
         <h1>{greviculteur.name}</h1>
         <div 
