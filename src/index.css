@@ -369,12 +369,6 @@
 	box-sizing: border-box;
 }
 
-html,
-body {
-  position: fixed;
-  overflow: hidden;
-}
-
 body {
 	color: #2f3359;
 	font-family: MarkPro;
@@ -382,4 +376,16 @@ body {
 
 h1, h2 {
   font-family: Dosis;
+}
+
+@media (max-width: 1023px) {
+  html,
+  body {
+    position: fixed;
+    overflow: hidden;
+  }
+
+  body {
+    width: 100%;
+  }
 }
