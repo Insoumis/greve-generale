@@ -29,12 +29,16 @@
     padding: 30px;
 }
 
+.Single .Écologie header {
+    background: #99c24d;
+}
+
 .Single .Éducation header {
     background: #C70039;
 }
 
 .Single .Justice header {
-    background: #5b1646;
+    background: #8B226B;
 }
 
 .Single .Public header {
@@ -64,12 +68,16 @@
     text-decoration: underline;
 }
 
+.Écologie .Single-content a {
+    color: #99c24d;
+}
+
 .Éducation .Single-content a {
     color: #C70039;
 }
 
 .Justice .Single-content a {
-    color: #5b1646;
+    color: #8B226B;
 }
 
 .Public .Single-content a {

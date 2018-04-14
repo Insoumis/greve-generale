@@ -17,6 +17,10 @@
     transform: scale(1.5);
 }
 
+.Pin.Écologie {
+    background-image: url('./assets/pin-ecologie.svg');
+}
+
 .Pin.Éducation {
     background-image: url('./assets/pin-education.svg');
 }
@@ -54,12 +58,16 @@
     margin: 0;
 }
 
+.Pin.Écologie h1 {
+    color: #99c24d;
+}
+
 .Pin.Éducation h1 {
     color: #C70039;
 }
 
 .Pin.Justice h1 {
-    color: #5b1646;
+    color: #8B226B;
 }
 
 .Pin.Public h1 {

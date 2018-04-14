@@ -35,14 +35,19 @@
     outline: 0;
 }
 
+.Greviculteurs-filters .Écologie {
+    background: #99c24d;
+    border-color: #99c24d;
+}
+
 .Greviculteurs-filters .Éducation {
     background: #C70039;
     border-color: #C70039;
 }
 
 .Greviculteurs-filters .Justice {
-    background: #5b1646;
-    border-color: #5b1646;
+    background: #8B226B;
+    border-color: #8B226B;
 }
 
 .Greviculteurs-filters .Public {
@@ -85,12 +90,16 @@
     text-transform: uppercase;
 }
 
+.Greviculteurs-list .Écologie h1 {
+    color: #99c24d;
+}
+
 .Greviculteurs-list .Éducation h1 {
     color: #C70039;
 }
 
 .Greviculteurs-list .Justice h1 {
-    color: #5b1646;
+    color: #8B226B;
 }
 
 .Greviculteurs-list .Public h1 {
