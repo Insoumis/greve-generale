@@ -40,6 +40,11 @@
     border-color: #C70039;
 }
 
+.Greviculteurs-filters .Justice {
+    background: #5b1646;
+    border-color: #5b1646;
+}
+
 .Greviculteurs-filters .Public {
     background: #ebb400;
     border-color: #ebb400;
@@ -82,6 +87,10 @@
 
 .Greviculteurs-list .Éducation h1 {
     color: #C70039;
+}
+
+.Greviculteurs-list .Justice h1 {
+    color: #5b1646;
 }
 
 .Greviculteurs-list .Public h1 {

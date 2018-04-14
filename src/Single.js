@@ -18,10 +18,12 @@ const Single = ({ greviculteur, history }) => {
         className={greviculteur.category}
         onClick={e => e.stopPropagation()}
       >
-        <Link className="Single-close" to="/">
-          <i className="fas fa-times-circle" />
-        </Link>
-        <h1>{greviculteur.name}</h1>
+        <header>
+          <Link className="Single-close" to="/">
+            <i className="fas fa-times-circle" />
+          </Link>
+          <h1>{greviculteur.name}</h1>
+        </header>
         <div 
           className="Single-content" 
           dangerouslySetInnerHTML={{

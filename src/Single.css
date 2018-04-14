@@ -22,40 +22,62 @@
     width: 730px;
 }
 
+.Single header {
+    background: #3c4171;
+    color: rgba(248, 247, 247, 1);
+    margin: -30px -30px 45px;
+    padding: 30px;
+}
+
+.Single .Éducation header {
+    background: #C70039;
+}
+
+.Single .Justice header {
+    background: #5b1646;
+}
+
+.Single .Public header {
+    background: #ebb400;
+}
+
 .Single-close {
-    color: #3c4171;
+    color: rgba(248, 247, 247, 1);
     float: right;
     font-size: 30px;
-}
-
-.Éducation .Single-close {
-    color: #C70039;
-}
-
-.Public .Single-close {
-    color: #ebb400;
 }
 
 .Single h1 {
     margin: 0 50px 0 0;
 }
 
-.Single-content {
-    margin: 0 15px;
+.Single-content h2 {
+    text-indent: 15px;
 }
 
 .Single-content a {
     color: #C70039;
     text-decoration: none;
-    transition: .2s;
 }
 
 .Single-content a:hover {
-    font-weight: 700;
+    text-decoration: underline;
+}
+
+.Éducation .Single-content a {
+    color: #C70039;
+}
+
+.Justice .Single-content a {
+    color: #5b1646;
 }
 
 .Public .Single-content a {
     color: #ebb400;
+}
+
+.Single-content li {
+    margin-bottom: 10px;
 }
 
 .Single-twitter {
@@ -63,7 +85,7 @@
 }
 
 .Single-twitter h2 {
-    text-align: center;
+    text-indent: 15px;
     margin: 45px 0 30px;
 }
 

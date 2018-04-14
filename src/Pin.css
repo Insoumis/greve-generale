@@ -21,6 +21,10 @@
     background-image: url('./assets/pin-education.svg');
 }
 
+.Pin.Justice {
+    background-image: url('./assets/pin-justice.svg');
+}
+
 .Pin.Public {
     background-image: url('./assets/pin-public.svg');
 }
@@ -29,6 +33,7 @@
     background: rgba(248, 247, 247, .95);
     border-radius: 4px;
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, .1);
+    line-height: 1.45em;
     margin-left: 10px;
     opacity: 0;
     padding: 10px;
@@ -45,7 +50,7 @@
 }
 
 .Pin-tooltip h1 {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
 }
 
@@ -53,11 +58,16 @@
     color: #C70039;
 }
 
+.Pin.Justice h1 {
+    color: #5b1646;
+}
+
 .Pin.Public h1 {
     color: #ebb400;
 }
 
 .Pin-tooltip p {
+    font-size: 11px;
     margin: 5px 0 0;
 }
 

@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
 import mapboxgl from 'mapbox-gl';
+import { withRouter } from 'react-router-dom';
 
 import Pin from './Pin';
 
@@ -39,7 +40,7 @@ class Map extends Component {
       nextProps.greviculteurs.forEach((greviculteur) => {
         const container = document.createElement('div');
         ReactDOM.render(
-          <Pin greviculteur={greviculteur} />
+          <Pin greviculteur={greviculteur} goToSingle={() => nextProps.history.push(`/${greviculteur.id}`)} />
         , container);
         const marker = new mapboxgl.Marker(container)
           .setLngLat([greviculteur.lng, greviculteur.lat])
@@ -66,4 +67,4 @@ class Map extends Component {
   }
 }
 
-export default Map;
+export default withRouter(Map);

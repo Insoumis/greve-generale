@@ -20,7 +20,11 @@ class App extends Component {
     db.collection('greviculteurs').orderBy('name').get()
       .then(collection => {
         this.setState({ 
-          greviculteurs: collection.docs.map( doc => Object.assign( doc.data(), { id: doc.id } ) ),
+          greviculteurs: collection.docs.map(
+            doc => Object.assign( doc.data(), { id: doc.id } ) 
+          ).filter(
+            greviculteur => !greviculteur.invalid
+          ),
         });
       });
   }
@@ -29,7 +33,11 @@ class App extends Component {
     db.collection('greviculteurs').orderBy('name').where('category', '==', category).get()
       .then(collection => {
         this.setState({ 
-          greviculteurs: collection.docs.map( doc => Object.assign( doc.data(), { id: doc.id } ) ),
+          greviculteurs: collection.docs.map(
+            doc => Object.assign( doc.data(), { id: doc.id } ) 
+          ).filter(
+            greviculteur => !greviculteur.invalid
+          ),
         });
       });
   }

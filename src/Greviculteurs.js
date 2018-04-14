@@ -22,6 +22,7 @@ class Greviculteurs extends Component {
         <div className="Greviculteurs-filters">
           <button className={(this.state.category ? '' : 'active')} onClick={() => this.filter()}>Tout</button>
           <button className={`Éducation${(this.state.category === 'Éducation' ? ' active' : '')}`} onClick={() => this.filter('Éducation')}>Éducation</button>
+          <button className={`Justice${(this.state.category === 'Justice' ? ' active' : '')}`} onClick={() => this.filter('Justice')}>Justice</button>
           <button className={`Public${(this.state.category === 'Public' ? ' active' : '')}`} onClick={() => this.filter('Public')}>Service Public</button>
         </div>
         <div className="Greviculteurs-list">
