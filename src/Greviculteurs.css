@@ -55,8 +55,13 @@
     border-color: #ebb400;
 }
 
+.Greviculteurs-filters .Transport {
+    background: #ff5627;
+    border-color: #ff5627;
+}
+
 .Greviculteurs-list {
-    height: calc(100% - 34px);
+    height: calc(100% - 68px);
     overflow-y: auto;
 }
 
@@ -104,6 +109,10 @@
 
 .Greviculteurs-list .Public h1 {
     color: #ebb400;
+}
+
+.Greviculteurs-list .Transport h1 {
+    color: #ff5627;
 }
 
 .Greviculteurs-list p {

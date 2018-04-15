@@ -33,6 +33,10 @@
     background-image: url('./assets/pin-public.svg');
 }
 
+.Pin.Transport {
+    background-image: url('./assets/pin-transport.svg');
+}
+
 .Pin-tooltip {
     background: rgba(248, 247, 247, .95);
     border-radius: 4px;
@@ -72,6 +76,10 @@
 
 .Pin.Public h1 {
     color: #ebb400;
+}
+
+.Pin.Transport h1 {
+    color: #ff5627;
 }
 
 .Pin-tooltip p {
