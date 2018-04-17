@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.a33e2cc4.css",
-  "main.css.map": "static/css/main.a33e2cc4.css.map",
-  "main.js": "static/js/main.6aa40a16.js",
-  "main.js.map": "static/js/main.6aa40a16.js.map",
+  "main.css": "static/css/main.5c055b9d.css",
+  "main.css.map": "static/css/main.5c055b9d.css.map",
+  "main.js": "static/js/main.6c16bc40.js",
+  "main.js.map": "static/js/main.6c16bc40.js.map",
   "static/media/MarkPro-Bold.woff": "static/media/MarkPro-Bold.96785d36.woff",
   "static/media/MarkPro-Bold.woff2": "static/media/MarkPro-Bold.0bc4a8a5.woff2",
   "static/media/MarkPro.woff": "static/media/MarkPro.5825c3f2.woff",
@@ -11,6 +11,7 @@
   "static/media/pin-education.svg": "static/media/pin-education.178c957f.svg",
   "static/media/pin-justice.svg": "static/media/pin-justice.04b48dc1.svg",
   "static/media/pin-public.svg": "static/media/pin-public.361514fd.svg",
+  "static/media/pin-sante.svg": "static/media/pin-sante.e5871e6d.svg",
   "static/media/pin-transport.svg": "static/media/pin-transport.9028c0d2.svg",
   "static/media/pin.svg": "static/media/pin.e1ffaf5e.svg"
 }
