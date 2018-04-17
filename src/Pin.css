@@ -50,7 +50,6 @@
     transform: translateX(-50%) translateY(calc(-100%));
     transition: .3s;
     width: 180px;
-    z-index: 1200;
 }
 
 .Pin:hover .Pin-tooltip {
@@ -80,7 +79,7 @@
 }
 
 .Pin.Transport h1 {
-    color: #ff5627;
+    color: #ff7200;
 }
 
 .Pin-tooltip p {
