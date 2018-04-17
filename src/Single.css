@@ -76,6 +76,10 @@
     text-decoration: underline;
 }
 
+.Santé .Single-content a {
+    color: #05a1c3;
+}
+
 .Écologie .Single-content a {
     color: #9fc950;
 }
