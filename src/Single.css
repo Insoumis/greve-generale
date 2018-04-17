@@ -29,6 +29,10 @@
     padding: 30px;
 }
 
+.Single .Santé header {
+    background: #05a1c3;
+}
+
 .Single .Écologie header {
     background: #9fc950;
 }

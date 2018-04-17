@@ -21,11 +21,12 @@ class Greviculteurs extends Component {
       <div className="Greviculteurs">
         <div className="Greviculteurs-filters">
           <button className={(this.state.category ? '' : 'active')} onClick={() => this.filter()}>Tout</button>
+          <button className={`Santé${(this.state.category === 'Santé' ? ' active' : '')}`} onClick={() => this.filter('Santé')}>Santé</button>
           <button className={`Écologie${(this.state.category === 'Écologie' ? ' active' : '')}`} onClick={() => this.filter('Écologie')}>Écologie</button>
-          <button className={`Éducation${(this.state.category === 'Éducation' ? ' active' : '')}`} onClick={() => this.filter('Éducation')}>Éducation</button>
-          <button className={`Justice${(this.state.category === 'Justice' ? ' active' : '')}`} onClick={() => this.filter('Justice')}>Justice</button>
           <button className={`Public${(this.state.category === 'Public' ? ' active' : '')}`} onClick={() => this.filter('Public')}>Service Public</button>
           <button className={`Transport${(this.state.category === 'Transport' ? ' active' : '')}`} onClick={() => this.filter('Transport')}>Transport</button>
+          <button className={`Éducation${(this.state.category === 'Éducation' ? ' active' : '')}`} onClick={() => this.filter('Éducation')}>Éducation</button>
+          <button className={`Justice${(this.state.category === 'Justice' ? ' active' : '')}`} onClick={() => this.filter('Justice')}>Justice</button>
         </div>
         <div className="Greviculteurs-list">
         {this.props.greviculteurs && this.props.greviculteurs.map((greviculteur) => (

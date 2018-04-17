@@ -17,6 +17,10 @@
     transform: scale(1.5);
 }
 
+.Pin.Santé {
+    background-image: url('./assets/pin-sante.svg');
+}
+
 .Pin.Écologie {
     background-image: url('./assets/pin-ecologie.svg');
 }
@@ -60,6 +64,10 @@
 .Pin-tooltip h1 {
     font-size: 14px;
     margin: 0;
+}
+
+.Pin.Santé h1 {
+    color: #05a1c3;
 }
 
 .Pin.Écologie h1 {

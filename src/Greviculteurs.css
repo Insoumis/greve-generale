@@ -35,6 +35,11 @@
     outline: 0;
 }
 
+.Greviculteurs-filters .Santé {
+    background: #05a1c3;
+    border-color: #05a1c3;
+}
+
 .Greviculteurs-filters .Écologie {
     background: #9fc950;
     border-color: #9fc950;
@@ -93,6 +98,10 @@
     font-size: 16px;
     margin: 0;
     text-transform: uppercase;
+}
+
+.Greviculteurs-list .Santé h1 {
+    color: #05a1c3;
 }
 
 .Greviculteurs-list .Écologie h1 {
