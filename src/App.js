@@ -56,7 +56,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router basename="/greve-generale">
+      <Router>
         <div className={`App${(this.state.isMobileListHidden ? '' : ' Mobile-list-displayed')}`}>
           <Map greviculteurs={this.state.greviculteurs} greviculteurHovered={this.state.greviculteurHovered} />
           <Nav toggleMobileList={() => this.toggleMobileList()}/>
