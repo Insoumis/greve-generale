@@ -65,6 +65,11 @@
     border-color: #ff7200;
 }
 
+.Greviculteurs-filters .Comité5mai {
+    background: #ef275c;
+    border-color: #ef275c;
+}
+
 .Greviculteurs-list {
     height: calc(100% - 68px);
     overflow-y: auto;
@@ -122,6 +127,10 @@
 
 .Greviculteurs-list .Transport h1 {
     color: #ff7200;
+}
+
+.Greviculteurs-list .Comité5mai h1 {
+    color: #e81c52;
 }
 
 .Greviculteurs-list p {

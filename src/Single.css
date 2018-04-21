@@ -53,6 +53,10 @@
     background: #ff7200;
 }
 
+.Single .Comité5mai header {
+    background: #ef275c;
+}
+
 .Single-close {
     color: rgba(248, 247, 247, 1);
     float: right;
@@ -98,6 +102,10 @@
 
 .Transport .Single-content a {
     color: #ff7200;
+}
+
+.Comité5mai .Single-content a {
+    color: #ef275c;
 }
 
 .Single-content li {

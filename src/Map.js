@@ -37,7 +37,7 @@ class Map extends Component {
         this.markers = []
       }
 
-      [...nextProps.greviculteurs].reverse().forEach((greviculteur) => {
+      nextProps.greviculteurs.forEach((greviculteur) => {
         const container = document.createElement('div');
         ReactDOM.render(
           <Pin greviculteur={greviculteur} goToSingle={() => nextProps.history.push(`/${greviculteur.id}`)} />
