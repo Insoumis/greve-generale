@@ -50,11 +50,15 @@ class Map extends Component {
     }
 
     if (this.props.greviculteurHovered !== nextProps.greviculteurHovered) {
-      this.props.greviculteurHovered && document.getElementById(this.props.greviculteurHovered) && 
+      if (this.props.greviculteurHovered && document.getElementById(this.props.greviculteurHovered)) {
+        document.getElementById(this.props.greviculteurHovered).parentElement.classList.remove('hovered');
         document.getElementById(this.props.greviculteurHovered).classList.remove('hovered');
+      }
         
-      nextProps.greviculteurHovered && document.getElementById(nextProps.greviculteurHovered) && 
+      if (nextProps.greviculteurHovered && document.getElementById(nextProps.greviculteurHovered)) {
+        document.getElementById(nextProps.greviculteurHovered).parentElement.classList.add('hovered');
         document.getElementById(nextProps.greviculteurHovered).classList.add('hovered');
+      }
     }
   }
   

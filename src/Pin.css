@@ -8,8 +8,9 @@
     width: 20px;
 }
 
+.mapboxgl-marker.hovered,
 .mapboxgl-marker:hover {
-    z-index: 800;
+    z-index: 1500;
 }
 
 .Pin.hovered,
