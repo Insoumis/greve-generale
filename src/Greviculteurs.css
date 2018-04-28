@@ -5,9 +5,29 @@
     height: calc(100vh - 92px);
     margin: 92px 4% 0;
     min-width: 500px;
-    padding: 45px 30px;
+    padding: 30px;
     position: relative;
     width: 30%;
+}
+
+.Greviculteurs-contact {
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.Greviculteurs-contact a {
+    color: #2f3359;
+    margin: 0 8px;
+    transition: .2s;
+}
+
+.Greviculteurs-contact a:last-child {
+    color: #1da1f2;
+}
+
+.Greviculteurs-contact a:hover {
+    color: #C70039;
 }
 
 .Greviculteurs-filters {
@@ -71,7 +91,7 @@
 }
 
 .Greviculteurs-list {
-    height: calc(100% - 68px);
+    height: calc(100% - 86px);
     overflow-y: auto;
 }
 

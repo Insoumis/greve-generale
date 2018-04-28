@@ -19,6 +19,11 @@ class Greviculteurs extends Component {
   render() {
     return (
       <div className="Greviculteurs">
+        <div className="Greviculteurs-contact">
+          Contactez nous :{' '} 
+          <a href="mailto:union@greve-generale.fr"><i class="fas fa-envelope"></i></a>
+          <a target="_blank" href="https://twitter.com/union_generale"><i class="fab fa-twitter"></i></a>
+        </div>
         <div className="Greviculteurs-filters">
           <button className={(this.state.category ? '' : 'active')} onClick={() => this.filter()}>Tout</button>
           <button className={`Santé${(this.state.category === 'Santé' ? ' active' : '')}`} onClick={() => this.filter('Santé')}>Santé</button>
