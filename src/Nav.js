@@ -7,10 +7,8 @@ import './Nav.css';
 const Nav = ({ location, toggleMobileList }) => {
   return (
     <nav className="Nav">
-      <Link to="/">
-        <h1>Grève Générale</h1>
-        <h2>Amis «&nbsp;gréviculteurs&nbsp;» vous n'êtes pas seuls !</h2>
-      </Link>
+      <h1><Link to="/">Grève Générale</Link></h1>
+      <h2>Amis «&nbsp;gréviculteurs&nbsp;» vous n'êtes pas seuls !</h2>
       {(location.pathname !== '/proposer') &&
         <div>
           <Link title="Proposer une lutte" to="/proposer"><i className="fas fa-plus-square" /></Link>
