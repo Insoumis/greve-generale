@@ -7,6 +7,10 @@
     z-index: 1000;
 }
 
+.Nav a {
+    text-decoration: none;
+}
+
 .Nav h1 {
     color: white;
     font-family: Dosis;
@@ -22,6 +26,25 @@
     font-size: 16px;
     margin: 0;
     text-align: center;
+}
+
+.Nav div {
+    font-size: 32px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.Nav div a {
+    color: white;
+    display: inline-block;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+    transition: .2s linear;
+}
+
+.Nav div a:hover {
+    transform: scale(1.2);
 }
 
 .Nav button {
@@ -43,10 +66,16 @@
         background: transparent;
         border: 0;
         color: white;
-        display: block;
-        float: right;
-        font-size: 32px;
+        display: inline-block;
+        margin-left: 15px;
         padding: 0;
         text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+    }
+}
+
+@media (max-width: 374px) {
+    .Nav h1,
+    .Nav div {
+        font-size: 28px;
     }
 }

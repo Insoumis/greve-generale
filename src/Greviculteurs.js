@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 import './Greviculteurs.css';
 
@@ -17,12 +17,16 @@ class Greviculteurs extends Component {
   }
 
   render() {
+    if (this.props.location.pathname === '/proposer') {
+      return false;
+    }
+
     return (
       <div className="Greviculteurs">
         <div className="Greviculteurs-contact">
           Contactez nous :{' '} 
-          <a href="mailto:union@greve-generale.fr"><i class="fas fa-envelope"></i></a>
-          <a target="_blank" href="https://twitter.com/union_generale"><i class="fab fa-twitter"></i></a>
+          <a href="mailto:union@greve-generale.fr"><i className="fas fa-envelope"></i></a>
+          <a target="_blank" href="https://twitter.com/union_generale" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
         </div>
         <div className="Greviculteurs-filters">
           <button className={(this.state.category ? '' : 'active')} onClick={() => this.filter()}>Tout</button>
@@ -62,4 +66,4 @@ class Greviculteurs extends Component {
   }
 }
 
-export default Greviculteurs;
+export default withRouter(Greviculteurs);

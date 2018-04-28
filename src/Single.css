@@ -1,6 +1,6 @@
 .Single {
-    animation: overlay-appears .2s;
-    background: rgba(248, 247, 247, .6);
+    animation: single-overlay-appears .2s;
+    background: rgba(248, 247, 247, .8);
     cursor: pointer;
     height: calc(100vh - 92px);
     position: absolute;
@@ -10,7 +10,7 @@
 }
 
 .Single > div {
-    animation: content-appears .4s;
+    animation: single-content-appears .4s;
     background: rgba(248, 247, 247, 1);
     border-radius: 4px;
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, .1);
@@ -125,7 +125,7 @@
     color: #3b94d9;
 }
 
-@keyframes overlay-appears {
+@keyframes single-overlay-appears {
     from {
         opacity: 0;
     }
@@ -134,7 +134,7 @@
     }
 }
 
-@keyframes content-appears {
+@keyframes single-content-appears {
     from {
         transform: translateY(-50%);
     }

@@ -6,6 +6,7 @@ import Map from './Map';
 import Nav from './Nav';
 import Greviculteurs from './Greviculteurs';
 import Single from './Single';
+import Suggest from './Suggest';
 
 class App extends Component {
   state = {
@@ -77,6 +78,7 @@ class App extends Component {
               } 
             />
           }
+          <Route path="/proposer" component={Suggest} />
         </div>
       </Router>
     );

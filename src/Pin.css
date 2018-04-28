@@ -1,10 +1,10 @@
 .Pin {
-    animation: marker-appears .4s;
+    animation: pin-appears .4s;
     background: url('./assets/pin.svg') no-repeat;
     background-size: cover;
     height: 28px;
     transform-origin: bottom center;
-    transition: .3s;
+    transition: .2s linear;
     width: 20px;
 }
 
@@ -104,7 +104,7 @@
     margin: 5px 0 0;
 }
 
-@keyframes marker-appears {
+@keyframes pin-appears {
     from {
         transform: translateY(-30px);
     }
