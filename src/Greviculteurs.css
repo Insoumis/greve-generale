@@ -91,7 +91,7 @@
 }
 
 .Greviculteurs-list {
-    height: calc(100% - 86px);
+    height: calc(100% - 120px);
     overflow-y: auto;
 }
 
@@ -102,6 +102,10 @@
     padding: 30px 15px 15px;
     text-decoration: none;
     transition: .2s;
+}
+
+.Greviculteurs-list a:first-child {
+    padding-top: 15px;
 }
 
 .Greviculteurs-list a:hover {

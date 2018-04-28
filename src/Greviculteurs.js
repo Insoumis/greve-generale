@@ -43,7 +43,7 @@ class Greviculteurs extends Component {
               onMouseOut={() => this.props.handleListHover()}
             >
               {(greviculteur.twitter) ? 
-                <img src={`https://twitter.com/${greviculteur.twitter}/profile_image?size=normal`} alt="Avatar Twitter"/>
+                <img src={`https://avatars.io/twitter/${greviculteur.twitter}`} alt="Avatar Twitter" width="48" />
               : false}
               <div>
                 <h1>
