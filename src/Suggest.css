@@ -1,0 +1,99 @@
+.Suggest {
+    animation: suggest-appear .8s;
+    background: rgba(248, 247, 247, .95);
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, .1);
+    float: right;
+    height: calc(100vh - 92px);
+    margin: 92px 4% 0;
+    min-width: 500px;
+    padding: 30px;
+    position: relative;
+    width: 30%;
+}
+
+.Suggest h1 {
+    color: #C70039;
+    margin: 0 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Suggest form {
+    height: calc(100% - 66px);
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.Suggest fieldset {
+    border: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.Suggest label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.Suggest input {
+    width: 100%;
+}
+
+.Suggest #description {
+    background: white;
+    min-height: 100px;
+}
+
+.Suggest button,
+.Suggest.thanks a {
+    background: #C70039;
+    border: 2px solid #C70039;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    float: right;
+    font-family: Dosis;
+    font-weight: 700;
+    padding: 2px 6px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.Suggest button:focus,
+.Suggest button:hover,
+.Suggest.thanks a:hover {
+    background: transparent;
+    color: #3c4171;
+    outline: 0;
+}
+
+.Suggest.thanks p {
+    font-weight: 700;
+}  
+
+.Suggest.thanks a {
+    text-decoration: none;
+}
+
+@media (max-width: 1023px) {
+    .Suggest {
+        height: calc(100vh - 66px);
+        margin: 66px 0 0;
+        min-width: 0;
+        transition: .2s;
+        width: 100%;
+    }
+}
+
+@keyframes suggest-appear {
+    from {
+        opacity: .5;
+        transform: translateX(10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
